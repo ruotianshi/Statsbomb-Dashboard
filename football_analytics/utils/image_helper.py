@@ -19,8 +19,9 @@ from PIL import Image, ImageDraw, ImageFont
 # 图片加载
 # ─────────────────────────────────────────────
 
-_PLAYER_DIR = "assets/players"
-_TEAM_DIR   = "assets/teams"
+_BASE_DIR   = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))                                                            
+_PLAYER_DIR = os.path.join(_BASE_DIR, "assets", "players")            
+_TEAM_DIR   = os.path.join(_BASE_DIR, "assets", "teams")  
 _EXTENSIONS = [".png", ".jpg", ".jpeg", ".webp"]
 
 
